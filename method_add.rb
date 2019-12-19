@@ -3,8 +3,15 @@
 # メソッドを実行する。
 # メソッド名はaddとする。
 
-def add(x , y)
+def add(x, y)
     puts (x + y)
 end
 
 add(1, 2)
+
+# 模範解答
+# def add(x, y)
+#     x + y
+# end
+
+# puts add(10, 1)
