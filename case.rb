@@ -4,12 +4,27 @@
 # sapphire: September
 # それ以外の場合: Not Found.
 
-Birth_stone = "ruby"
-if Birth_stone == "ruby"
+
+# ifの場合
+# Birth_stone = "opal"
+# if Birth_stone == "ruby"
+#     puts "July"
+# elsif Birth_stone == "peridot"
+#     puts "August"
+# elsif Birth_stone == "sapphire"
+#     puts "September"
+# else
+#     puts "Not Found."
+# end
+
+# caseの場合
+stone = "ruby"
+case stone
+when "ruby"
     puts "July"
-elsif Birth_stone == "peridot"
+when "peridot"
     puts "August"
-elsif Birth_stone == "sapphire"
+when "sapphire"
     puts "September"
 else
     puts "Not Found."
