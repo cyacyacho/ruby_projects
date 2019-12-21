@@ -26,7 +26,17 @@
 # 'red' 'green' 'blue'
 # 配列の要素を一つづつ取り出して出力する
 
-colors = ['red', 'green', 'blue']
-colors.each do |color|
-    puts color
+# colors = ['red', 'green', 'blue']
+# colors.each do |color|
+#     puts color
+# end
+
+# for例題
+# １．配列 numbersを作成(1,2,3,4,5)
+# ２．配列の要素を一つつづ取り出して出力する
+
+numbers = [1, 2, 3, 4, 5]
+for number in numbers do 
+    puts number
 end
+
