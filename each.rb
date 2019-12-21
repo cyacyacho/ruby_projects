@@ -16,7 +16,17 @@
 # end
 
 # 正解２
-numbers = [1, 2, 3, 4, 5]
-numbers.each {|number|
-    puts number
-}
+# numbers = [1, 2, 3, 4, 5]
+# numbers.each {|number|
+#     puts number
+# }
+
+# 例題２
+# 配列 colorsを作成
+# 'red' 'green' 'blue'
+# 配列の要素を一つづつ取り出して出力する
+
+colors = ['red', 'green', 'blue']
+colors.each do |color|
+    puts color
+end
