@@ -1,13 +1,13 @@
 class Car
-    
+    REGION = "USA"
     @@count = 0
     def initialize(name)
         @name = name
         @@count += 1
     end
     
-    def info
-        puts @@count
+    def self.info
+        puts "#{@@count} instance(s). Region: #{RESION}"
     end
     
     def hello
@@ -17,24 +17,15 @@ end
 
 esse = Car.new("ESSE")
 # esse.hello
+esse.info
 
 # toppo = Car.new("Toppo")
 # toppo.hello
+Car.info
 
 # prius = Car.new("Prius")
 # prius.hello
+Car.info
 
-# 例題
-# Carクラスのインスタンスが作成された回数をカウントして出力します。
+# 変数と定数があるが、定数名は慣習として全て大文字で書く
 
-# クラス自体に値が保持できる「クラス変数」を定義する方法
-# クラス変数は＠＠から始まる
-# ＠＠count = 0とし、
-# initializeに
-# @@count += 1とする
-
-# 例題２
-# クラスメソッドinfoを定義
-# クラスメソッドinfoを実行すると、インスタンスの生成回数(@@count)を出力する
-
-esse.info
