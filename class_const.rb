@@ -7,25 +7,28 @@ class Car
     end
     
     def self.info
-        puts "#{@@count} instance(s). Region: #{RESION}"
+        puts "#{@@count} instance(s). Region: #{REGION}"
     end
     
     def hello
-        puts "Hello! I am #{@name}. #{@@count} instance(s)."
+        puts "Hello! I am #{@name}. "
     end
 end
 
 esse = Car.new("ESSE")
 # esse.hello
-esse.info
+Car.info
 
-# toppo = Car.new("Toppo")
+toppo = Car.new("Toppo")
 # toppo.hello
 Car.info
 
-# prius = Car.new("Prius")
+puts Car::REGION
+prius = Car.new("Prius")
 # prius.hello
 Car.info
 
-# 変数と定数があるが、定数名は慣習として全て大文字で書く
 
+# 変数と定数があるが、定数名は慣習として全て大文字で書く
+# クラスメソッドを定義付けるときはselfを付ける
+# クラスメソッドはクラス名.メソッド名で呼び出す
