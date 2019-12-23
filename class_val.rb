@@ -6,7 +6,7 @@ class Car
         @@count += 1
     end
     
-    def info
+    def self.info
         puts @@count
     end
     
