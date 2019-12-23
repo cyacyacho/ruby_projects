@@ -1,6 +1,11 @@
 class Car
+    
+    # attr_accessor :name
+    attr_writer :name
+    # attr_reader :name
+    
     def initialize(name)
-        puts 'initialize'
+        # puts 'initialize'
         @name = name
     end
     
@@ -36,11 +41,11 @@ car.hello
 
 # 正解は書き込み用のメソッドを作成する。
 car.name = "chachacho"
-puts car.name
+# puts car.name
 
 
 # attr_accessor :name
-以下の分が上記accessor一行に相当する
+# 以下の分が上記accessor一行に相当する
     # def name
     #     @name
     # end
@@ -50,4 +55,9 @@ puts car.name
     # end
     
 # attr_reader :name
-以上は書き込みはできず、読み取りだけになる。
+# 以上は書き込みはできず、読み取りだけになる。
+# 43行目の"chachacho"を書き込んだ行がエラーになる。
+
+# attr_writer :name
+# 以上は読み取りができず、書き込みがOKになる。
+# 44行目のputs系が読み取りであり、外部から出力できない。（読み取れない）
