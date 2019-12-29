@@ -7,7 +7,7 @@ class Car
     end
     
     def self.info
-        puts @@count
+        puts "#{@@count} instance(s)."
     end
     
     def hello
@@ -15,7 +15,8 @@ class Car
     end
 end
 
-esse = Car.new("ESSE")
+# esse = Car.new("ESSE")
+# prius = Car.new("Prius")
 # esse.hello
 
 # toppo = Car.new("Toppo")
@@ -38,4 +39,5 @@ esse = Car.new("ESSE")
 # クラスメソッドを定義付けるときはselfを先に付ける。
 # クラスメソッドinfoを実行すると、インスタンスの生成回数(@@count)を出力する
 
-esse.info
+Car.info
+
