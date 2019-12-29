@@ -23,7 +23,6 @@ toppo = Car.new("Toppo")
 # toppo.hello
 Car.info
 
-puts Car::REGION
 prius = Car.new("Prius")
 # prius.hello
 Car.info
